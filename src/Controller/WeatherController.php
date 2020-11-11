@@ -20,13 +20,11 @@ class WeatherController extends AbstractController {
      * @Route("/weather")
      */
     public function index() {
-//        try {
-//            $weather = $this->weather->getWeather('Berlin', 'metric', 'de');
-//        } catch(OWMException $e) {
-//            echo 'OpenWeatherMap exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
-//        } catch(\Exception $e) {
-//            echo 'General exception: ' . $e->getMessage() . ' (Code ' . $e->getCode() . ').';
-//        }
+        //Moscow, Astrakhan, Kaliningrad
+        //$groupWeather = $this->weather->getGroupWeatherForecast([524894, 580497, 554234 ], 'metric', 'ru');
+        $weather = $this->weather->getWeatherForecast('Astrakhan', 'metric', 'ru');
+
+
         return $this->render('index.html.twig');
     }
 }

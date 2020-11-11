@@ -20,12 +20,20 @@ class WeatherAPI {
         $this->httpRequestFactory = $httpRequestFactory;
     }
 
+    public function getGroupWeatherForecast( array $queries, $units = 'imperial', $lang = 'en', $appid = '', $days = 1) {
+        $bulkResult = [];
+        foreach ( $queries as $query ) {
+            $bulkResult[] = $this->apiGate->getWeatherForecast($query, $units = 'imperial', $lang = 'en', $appid = '', $days = 1);
+        }
+        return $bulkResult;
+    }
+
     public function load() {
         $this->apiGate = new OpenWeatherMap( self::API_KEY, $this->httpClient, $this->httpRequestFactory );
         return $this;
     }
 
     public function __call( $name, $arguments ) {
-        $this->apiGate->$name(...$arguments);
+        return $this->apiGate->$name(...$arguments);
     }
 }
