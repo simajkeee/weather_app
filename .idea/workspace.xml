@@ -14,16 +14,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8af0cd9-8701-435d-bbea-13c4d596966f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/WeatherController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/WeatherAPI.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/weather.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/weather.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +35,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="symfony4_project" />
+                    <option name="lastUsedInstant" value="1605226365" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1605226364" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="JsbtTreeLayoutManager">
     <layout place="tools.popupGrunt">
@@ -234,7 +251,9 @@
       <workItem from="1605156985797" duration="95000" />
       <workItem from="1605211991113" duration="2910000" />
       <workItem from="1605215937775" duration="5391000" />
-      <workItem from="1605221330754" duration="4868000" />
+      <workItem from="1605221330754" duration="5188000" />
+      <workItem from="1605244818373" duration="23000" />
+      <workItem from="1605348362195" duration="1458000" />
     </task>
     <servers />
   </component>
@@ -296,10 +315,10 @@
     <state width="809" height="581" key="DebuggerActiveHint/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1605129111651" />
     <state width="808" height="581" key="DebuggerActiveHint/67.27.1853.1053@67.27.1853.1053" timestamp="1604990274005" />
     <state width="1646" height="581" key="DebuggerActiveHint/67.27.3773.1053@67.27.3773.1053" timestamp="1605001280382" />
-    <state x="977" y="269" width="446" height="577" key="FileChooserDialogImpl" timestamp="1605221328235">
+    <state x="977" y="269" width="446" height="577" key="FileChooserDialogImpl" timestamp="1605244839007">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="977" y="269" width="446" height="577" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1605221328235" />
+    <state x="977" y="269" width="446" height="577" key="FileChooserDialogImpl/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1605244839007" />
     <state x="723" y="268" width="530" height="598" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1605157078327" />
     <state x="515" y="277" width="530" height="577" key="FileChooserDialogImpl/67.27.3773.1053@67.27.3773.1053" timestamp="1605008056017" />
     <state width="1797" height="291" key="GridCell.Tab.0.bottom" timestamp="1605221329206">
@@ -374,6 +393,10 @@
     <state width="1797" height="291" key="GridCell.Tab.2.right/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1605221329207" />
     <state width="1797" height="342" key="GridCell.Tab.2.right/67.27.1853.1053@67.27.1853.1053" timestamp="1604992958961" />
     <state width="1797" height="342" key="GridCell.Tab.2.right/67.27.3773.1053@67.27.3773.1053" timestamp="1605008057178" />
+    <state x="703" y="166" width="1030" height="649" key="IDE.errors.dialog" timestamp="1605226298237">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="703" y="166" width="1030" height="649" key="IDE.errors.dialog/67.27.1853.1053/1920.0.1920.1080@67.27.1853.1053" timestamp="1605226298237" />
     <state x="692" y="223" width="592" height="658" key="NewPhpClassDialog" timestamp="1605045572883">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
