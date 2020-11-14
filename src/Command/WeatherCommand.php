@@ -57,7 +57,7 @@ class WeatherCommand extends Command {
         }
         $this->em->flush();
         $section->overwrite('Ready');
-        return Command::SUCCESS;
+        return 1;
     }
 
     private function getLastRow() {

@@ -1,5 +1,23 @@
 {% extends "base.html.twig" %}
 {% block title %}Weather{% endblock %}
 {% block body %}
-    test
+    <table>
+        {% if weather %}
+            <tr>
+                {% for name in column_names %}
+                    <th>{{ name }}</th>
+                {% endfor %}
+            </tr>
+                {% for w in weather %}
+                <tr>
+                    <td>{{ w.getId }}</td>
+                    <td>{{ w.getDateFrom.date }}</td>
+                    <td>{{ w.getDateTo.date }}</td>
+                    <td>{{ w.getCity }}</td>
+                    <td>{{ w.getTemperature }}</td>
+                    <td>{{ w.getWeatherDescription }}</td>
+                </tr>
+                {% endfor %}
+        {% endif %}
+    </table>
 {% endblock %}

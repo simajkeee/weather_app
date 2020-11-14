@@ -106,4 +106,8 @@ class Weather
 
         return $this;
     }
+
+    public function getObjectVarsKeys() {
+        return array_keys( get_object_vars( $this ) );
+    }
 }

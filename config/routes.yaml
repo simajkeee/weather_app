@@ -1,10 +1,19 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+index:
+    path: /
+    controller: App\Controller\WeatherController::index
+
+#sonata_user_admin_security:
+#    resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
+#    prefix: /admin
+#
+#sonata_user_admin_resetting:
+#    resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
+#    prefix: /admin/resetting
+
 sonata_user_admin_security:
     resource: '@SonataUserBundle/Resources/config/routing/admin_security.xml'
-    prefix: /admin
+    prefix: /
 
 sonata_user_admin_resetting:
     resource: '@SonataUserBundle/Resources/config/routing/admin_resetting.xml'
-    prefix: /admin/resetting
+    prefix: /resetting
